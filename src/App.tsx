@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css';
-import Accordion from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
-import OnOff from "./components/OnOff/OnOff";
-
+import {OnOff} from "./components/OnOff/OnOff";
 
 
 function App() {
@@ -29,10 +26,6 @@ function App() {
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
 
-
-            <OnOff/>
-            <OnOff/>
-            <OnOff/>
 
         </div>
     );
