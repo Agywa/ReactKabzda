@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 
 
-type PropsType ={
+export type PropsType ={
     on: boolean
     onChange: (on:boolean) => void
 }
 
-function OnOff(props: PropsType) {
+export function OnOff(props: PropsType) {
 
 
 
@@ -51,4 +51,3 @@ function OnOff(props: PropsType) {
 
 }
 
-export default OnOff
