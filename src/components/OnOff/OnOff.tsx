@@ -1,14 +1,9 @@
 import React, {useState} from "react";
 
 
-export type PropsType ={
-    on: boolean
-    onChange: (on:boolean) => void
-}
+function OnOff() {
 
-export function OnOff(props: PropsType) {
-
-
+    let [on, setOn] = useState(false)
 
     const onStyle = {
         width: "30px",
@@ -16,7 +11,7 @@ export function OnOff(props: PropsType) {
         border: "1px solid black",
         display: "inline-block",
         padding: "2px",
-        backgroundColor: props.on ? "green" : "white",
+        backgroundColor: on ? "green" : "white",
     };
 
     const offStyle = {
@@ -26,7 +21,7 @@ export function OnOff(props: PropsType) {
         display: "inLine-block",
         padding: "2px",
         marginLeft: "5px",
-        backgroundColor: props.on ? "white" : "red",
+        backgroundColor: on ? "white" : "red",
 
     };
 
@@ -37,17 +32,18 @@ export function OnOff(props: PropsType) {
         border: "1px solid black",
         display: "inLine-block",
         marginLeft: "5px",
-        backgroundColor: props.on ? "green" : "red",
+        backgroundColor: on ? "green" : "red",
 
 
     }
 
     return <div>
-        <div style={onStyle} onClick={() => {props.onChange (true)}}>ON</div>
-        <div style={offStyle} onClick={() => {props.onChange (false)}}>OFF</div>
+        <div style={onStyle} onClick={() => {setOn (true)}}>ON</div>
+        <div style={offStyle} onClick={() => {setOn (false)}}>OFF</div>
         <div style={indicatorStyle}></div>
     </div>
 
 
 }
 
+export default OnOff
