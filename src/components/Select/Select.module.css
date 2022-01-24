@@ -1,4 +1,4 @@
-.select span.main{
+.select span.main {
     border: 1px solid black;
     display: inline-block;
     min-height: 20px;
@@ -13,6 +13,6 @@
 }
 
 .item.selected {
-    background-color: blue ;
+    background-color: blue;
     color: white;
 }
