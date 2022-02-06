@@ -7,6 +7,7 @@ function App() {
 
     return (<div>
 
+
          <input/>
              <input value={"yo"} type={"password"}/>
 
