@@ -39,7 +39,7 @@ export const SimpleExample1 = () => {
 }
 
 export const SetTimeoutExample = () => {
-    const [counter, setCounter] = useState(1)
+    let [counter, setCounter] = useState(1)
     const [fake, setFake] = useState(1)
     console.log("SimpleExample1")
 
